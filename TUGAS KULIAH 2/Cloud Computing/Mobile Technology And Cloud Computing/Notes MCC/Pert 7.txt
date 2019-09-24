@@ -1,0 +1,17 @@
+Pertemuan 7 Mobile Cloud Computing.
+1. Offloading mmg meringankan konsumsi energi di mobile tapi tidak di cloud.
+2. Pendekatan: di sisi cloud dan jaringan.
+Mobile network:
+- data center: lokasi cloud
+	semakin bnyk pengguna cloud, semakin besar energy yg dikonsumsi. data center dimatikan kalau tdk ada yg menggunakan (switching on/off). develop hardware dan software yg menyesuaikan dengan load traffic.
+
+- MBS (marcocell base stasion)
+	hampir 60% mobile network dikonsumsi mobile network. pendekatan: switch off/on, cell zooming strategy (ukuran cell diperbesar dan diperkecil tergantung load traffic), cell breathing (juga mengatur besar cell). zooming: kalau traffic padat, akan mengecilkan cell (zoom in), kalau traffic tidak ramai maka akan zoom out. yg menentukan: Traffic load distribution, user requirements, channel state information --> analysis & decision --> adjusting.
+
+-FBS (Femtocell Base station: lebih efisien dari macrocell, konsumsi energi berkurang. klo semakin bnyak FBS, semakin bnyak energi yang dikonsumsi.
+ada femtocell cloud management yg mengatur penggunaan cloud. masih didevelop: performance hrs ttp baik sekalipun hemat energy, adaptive coverage, menggunakan algoritma untuk meningkatkan hemat energy. Algoritma ada 2: user activition detection algorythm dan green handover algorithm ( 
+
+- Mobile devices
+	yang perlu dilakukan: kebutuhan energy, resource, traffic pattern dan user behavior
+
+- mobile application and service: dari sisi software. teknik2nya: data compression untuk komunikasi dengan cloud, misalnya data online gaming dicompress sebelum dikirim ke cloud; energy saving in VoIP service: pertukaran message antara perangkat dan jaringan.

@@ -1,0 +1,34 @@
+Keamanan dalam 3 aspek/level dari MCC
+1. Mobile device
+memastikan aplikasi yang terinstall itu aman, bebas malware, isu spam, phising. aplikasi tidak menyebarkan informasi penting dari pengguna/perusahaan. Ada proses review oleh playstore/appstore yang memastikan aplikasi aman.
+cara penanggulangan:
+- Install antimalware: kekurangannya storage,ram, dan battery karena antimalware yang harus terus diupdate.
+- update os dan download aplikasi dari vendor yang terdaftar
+- jika data dicuri, bisa diremote untuk data wiping agar menghindari misused
+- hardware ydengan teknik enkripsi
+
+2. Wireless communication channel
+mendapatkan akses: access control attacks, confidentialitu attacks, integrity attacks, auth attacks, availability attack.
+- Enkripsi data ketika transmisi
+- gunakan password yg strong
+
+3. Cloud infra
+memastikan data di cloud aman, tdk ada yang mencuri. divirtualisasi sehingga tidak saling crossed used.
+
+
+5 isu MCC:
+1. aplikasi: mengamankan aplikasi yg diinstall user. data tidak dicuri, tidak dibocorkan.
+- Walldroid: firewall aplikasi untuk android os. cara kerja: mengumpulkan info aplikasi yang diinstall di mobile device kirim ke access point dan diteruskan ke C2DM dan VPN Server kemudian ke wall droid untuk dicek. informasi baik dan buruknya aplikasi tersimpan di walldroid apps server. security as a service, pengecekan keamanan aplikasi dilakukan di cloud.
+- SSE (Secure search engine): proteksi untuk serangan phising web dan serangan ssl strip based MITM(man in the middle). ssl strip menurunkan layanan ssl dari https menjadi http. ada phising filter, SSL verifier. cek keamanan dilakukan di cloud.
+
+2. authentication issue
+Kontrol akses dengan otentikasi.
+- Trustcube: score otentikasi berdasarkan behavior. ada 4 point yg involved: Client device, data aggregator, authentication enginge, authentication consumer. 
+diukur berapa persen sesuai dengan user itu. kelemahannya di false positif dan false negatif yang tinggi.
+- biometric encryption: protokol otentikasi menggunakan sensor biometric. one to end(recognize) matching: 1 data dibandingkan dengan banyak data di database, berusaha recognise dari data yang ada di database. kalau one to one(verifikasi), user beri data dirinya dulu kemudian diambil datanya dari db untuk dimatching.
+- SeDiCi 2.0: pada umumnya: mengirimkan secret info untuk membuktikan diri user ke pemilik service untuk dicek, tapi pada scheme ini tanpa secret info, diberikan challenge bahwa hanya orng tertentu yang dapat menjawabnya baru terotentikasi (zero knowledge proof(ZKP)). contoh otentikasi saya bukan robot dengan memilih gambar yang berhubungan.
+3. data security
+- Incremental Chryptograpy menggunakan message authentication code (mac). ada 3 post: Mobile client, cloud storage and processing dan trusted crypto coprocessos. data dipecah menjadi beberapa bagian, setiap bagian dicreate mac, kemudian diencript macnya --> dienkrip dengan sebuah symetric key yang dipegang oleh mobile client dan trusted crypto coprocessor (3rd party). kalau mac yang dimiliki mobile device cocok dengan mac di cloud.
+4.digital right management: melindungi hak cipta: contohnya spotify hanya bisa streaming, tdk bisa download.
+- CS-DRM: a cloud based SIM DRM.
+5. intrution detection

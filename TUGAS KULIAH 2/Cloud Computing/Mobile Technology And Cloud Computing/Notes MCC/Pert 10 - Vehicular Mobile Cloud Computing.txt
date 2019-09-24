@@ -1,0 +1,37 @@
+Secara teori dan empiris(eksperimental) sebagai kontribusi.
+
+
+Mobile agentsnya adalah kendaraan. Contohnya smart car.
+VMCC 
+ad hoc: tidak mengandalkan jaringan existing. membuat jaringan sendiri denga peer to peer untuk tujuan tertentu.
+node yang terhubung adalah perangkat mobile, dalam hal ini kendaraan.
+
+Vehicular ad hoc network: kendaraan yang dilengkapi dengan digital maps, positioning systems, wireless communication system, berperilaku sebagai smart machine untuk keamanan dan kenyamanan. komponen2 smart vehicle: forward radar, gps, event data recorder(edr), display, rear radar, computing platform.
+
+Komunikasi ada 2: Vehicle to vehichle dan vehicle to infra.
+vehicle to infra menghubungkan antara kendaraan dengan roadside unitrs yang memiliki strong computing device yang ditempatkan pada beberapa lokasi di jalan. meningkatkan traffic safety.
+
+VMCC memiliki 3 tier architecture: vehicular computing, mobile computing dan cloud computing. V2V-->RSU-->Base Station --> cloud (traffic management).
+
+yang perlu ditingkatkan: vehiclenya dan infrastrukturnya.
+
+Keterbatasan:
+- Mobility: node yang sangat cepat bergerak, network harus berubah cepat skli. menjadi member banyak network dlm waktu yang singkat
+- Volatility
+- Liability: menginvestigasi sebuah kecelakaan dengan edr tetapi ttg privacy lagi, segala aktivitas direkam.
+- Scalability: tanpa skalability yg bagus, akan menjadi mahal. tetapi kelemahannya jumlah kendaraan akan meningkat. 
+- Privacy: pergerakan akan selalu terpantau.
+
+Tantangan:
+1. Arsitektur mobile yang fleksibel
+2. Robust architecture: terhadap noise/gangguan. system harus tetap perform dalam perubahan kondisi apapun.
+3. Service - oriented architecture: layanan harus tetap tersedia
+
+Aplikasi:
+Advance Drivers Assist System
+Smart parking
+
+
+- requirement:
+usulkanlan solusi untuk requirement tersebut dengan 
+diskusi security dan trus tapi solve dengan cara apa, framework securitynya apa, skema atau framework trust. analisa dan usulkan framework sekurity, isu trust, frameworknya seperti apa.

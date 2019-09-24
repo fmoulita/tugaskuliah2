@@ -1,0 +1,32 @@
+Pendekatan untuk mengdentifikasi kepercayaan:
+- Service level agreement: fitur2 yang ada, 
+- Audit: melakuka audit dengan beberapa standard: fisma, sas70 ii, iso 27001
+- Meausing & Ratting: kuisioner diberikan ke customer yang diletakan di cloud market plaxe
+- self assessment questionnaire: dibuat oleh CSP untuk memastikan sekuriti
+- model trust dan reputasi:
+
+Evaluasi trust
+- Black box approach: tidak peduli yg terjadi di dalam, cek output aja sudah sesuai atau tidak dengan ekspektasi output. Contoh: keuntungan yang dirasakan ketika mengimplementasi cloud. 
+-Inside out approach: internal arsitektur. melihat arsitektur seluruh system baru ke masing2 komponen
+- outside in approach:arsitektur per komponen kemudian liat impact secara keseluruhan berdasarkan behaviournya.
+
+User Behavior Trust:
+- Tujuan, hanya digunakan oleh user yang benar2 menggunakan cloud untuk kebutuhan mereka
+- prinsip evaluasi:
+	- kepercayaan berkurang dari waktu ke waktu
+	- behaviour terkini adalah parameter yg penting
+	- trust harus meningkat slowly
+
+hierarchy dari user behavior trust evolution: user ini paput dipercaya atau tidak
+- Contract behavior sub trust: contract antara csp dan consumer, Security: user menyerang infra, Identity reauthentication, expense
+
+- Evidence: 
+- menggunakan tools untuk scan network flow
+- invasion detection system
+- log dan audit trails
+- data collecting tools
+- net management software
+- hardware:netscout
+- sec produk seperti firewall, access control system.
+
+Stud
